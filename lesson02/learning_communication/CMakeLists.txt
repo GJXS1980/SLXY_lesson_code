@@ -55,7 +55,11 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message1.msg
 #   Message2.msg
 # )
-add_message_files(FILES Person.msg)
+add_message_files(
+	FILES 
+	Person.msg
+	Str.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -63,7 +67,12 @@ add_message_files(FILES Person.msg)
 #   Service1.srv
 #   Service2.srv
 # )
-add_service_files(FILES AddTwoInts.srv)
+add_service_files(
+	FILES 
+	AddTwoInts.srv
+	SubTwoInts.srv
+  SumTwoInts.srv  
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
